@@ -12,12 +12,12 @@
   </url>
   
   <url>
-    <loc>https://example.com/eleventy-template-blog/posts/thirdpost/</loc>
-    <lastmod>2018-08-24</lastmod>
+    <loc>https://example.com/eleventy-template-blog/posts/fourthpost/</loc>
+    <lastmod>2022-02-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/eleventy-template-blog/posts/fourthpost/</loc>
+    <loc>https://example.com/eleventy-template-blog/posts/thirdpost/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
   
@@ -62,12 +62,12 @@
   </url>
   
   <url>
-    <loc>https://example.com/eleventy-template-blog/tags/second-tag/</loc>
+    <loc>https://example.com/eleventy-template-blog/tags/open-web-components/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/eleventy-template-blog/tags/posts-with-two-tags/</loc>
+    <loc>https://example.com/eleventy-template-blog/tags/javascript/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
 </urlset>

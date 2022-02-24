@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Your Blog Name</title>
+	<title>Erik&#39;s Blog</title>
 	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
 	
 	<link href="https://example.com/eleventy-template-blog/feed/feed.xml" rel="self"/>
@@ -11,6 +11,33 @@
 		<name>Your Name Here</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>An Introduction to Open Web Components</title>
+		<link href="https://example.com/eleventy-template-blog/posts/thirdpost/"/>
+		<updated>2022-02-24T00:00:00Z</updated>
+		<id>https://example.com/eleventy-template-blog/posts/thirdpost/</id>
+		<content type="html">&lt;p&gt;JavaScript is used widely across the internet, as it is natively run in your web browser. As a web developer, familiarizing yourself with JavaScript is vital to success. Open-wc streamlines aspects of development and utilizes Node.js and npm. From the open-wc Git Repository&#39;s README: &amp;quot;Open Web Components provides a set of defaults, recommendations and tools to help facilitate your web component project.&amp;quot;&lt;/p&gt;
+&lt;p&gt;What do Node.js and npm have to do with JavaScript? Node.js is a cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser. The Node Package Manager, or npm, is a software registry of over 800,000 packages installed alongside Node.js according to w3schools. Node.js is one of the most popular tools for open-source developers to work with JavaScript. In this article, I will walk through the steps required to start using open-wc on a Windows machine.&lt;/p&gt;
+&lt;h2 id=&quot;getting-started&quot; tabindex=&quot;-1&quot;&gt;Getting Started &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/eleventy-template-blog/posts/thirdpost/#getting-started&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;First things first, you will need an IDE to work with JavaScript. You may use any IDE you are comfortable with if it is compatible with JavaScript, but I will be using Visual Studio Code which can be downloaded &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;installing-node.js-and-npm&quot; tabindex=&quot;-1&quot;&gt;Installing Node.js and npm &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/eleventy-template-blog/posts/thirdpost/#installing-node.js-and-npm&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qkk0ponf32aod6a3gqwl.png&quot; alt=&quot;Download page&quot; /&gt;&lt;br /&gt;
+To install Node.js, go &lt;a href=&quot;https://nodejs.org/en/download/&quot;&gt;here&lt;/a&gt;. Get the most current LTS version for your operating system for the best stability, or the latest current version for new features at the cost of some stability. Since npm is included with the Node.js install, you should now have both; open your terminal and enter &lt;code&gt;node -v&lt;/code&gt; to check if Node.js was installed, and &lt;code&gt;npm -v&lt;/code&gt; to check if npm was installed. You&#39;re all set to continue if you see version numbers after running those commands.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ivrqvddmt4b436pqlh5u.png&quot; alt=&quot;Check if Node.js and npm are installed&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;starting-a-new-open-wc-project&quot; tabindex=&quot;-1&quot;&gt;Starting a new open-wc project &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/eleventy-template-blog/posts/thirdpost/#starting-a-new-open-wc-project&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To begin with open-wc, make a directory to put your project in. Change your terminal directory to this new location, and enter &lt;code&gt;npm init @open-wc&lt;/code&gt;. If everything has been installed correctly, this should run and you can now begin working on your open-wc project. I initialized my project with these options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New project scaffold&lt;/li&gt;
+&lt;li&gt;Web component&lt;/li&gt;
+&lt;li&gt;Linting, Testing, and Demoing enabled&lt;/li&gt;
+&lt;li&gt;No TypeScript&lt;/li&gt;
+&lt;li&gt;Install using npm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/045vzmnqn7t8awe2qwo5.png&quot; alt=&quot;open-wc initialization&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The hello-world element is located in the &lt;code&gt;/src/&lt;/code&gt; folder to be edited further. And with that, you have just created your first web component!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Wikipedia&#39;s API, and Using &#39;wikipedia-query&#39; to Fetch Articles</title>
@@ -50,19 +77,6 @@
 &lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/59j14w9imh9jtjs780x4.png&quot; alt=&quot;Image description&quot; /&gt;&lt;br /&gt;
 &lt;em&gt;You can see the that &#39;title&#39; is the search term, and extract is the HTML version of the Wikipedia article for State College, Pennsylvania. The page id is also given.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In summary, my example fetches a JSON response with the user&#39;s location information and stores it. The &lt;code&gt;wikipedia-query&lt;/code&gt; tag invokes the MediaWiki API, takes the search term (in my case, city and state, city, and state in three separate queries), and sets the API &#39;titles&#39; parameter to that term. The MediaWiki API then sends the query and retrieves the Wikipedia article for the given title (aka search term) in JSON format.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>This is my third post.</title>
-		<link href="https://example.com/eleventy-template-blog/posts/thirdpost/"/>
-		<updated>2018-08-24T00:00:00Z</updated>
-		<id>https://example.com/eleventy-template-blog/posts/thirdpost/</id>
-		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;ins class=&quot;highlight-line highlight-line-add&quot;&gt;	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/ins&gt;&lt;br /&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br /&gt;&lt;del class=&quot;highlight-line highlight-line-remove&quot;&gt;	counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/del&gt;&lt;br /&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;highlight-line&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/eleventy-template-blog/posts/thirdpost/#section-header&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
 </content>
 	</entry>
 	
