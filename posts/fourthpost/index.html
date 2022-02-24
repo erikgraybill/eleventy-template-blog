@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipedia&#39;s API, and Using &#39;wikipedia-query&#39; to Fetch Articles</title>
     <meta name="description" content="This is a post on getting started with the Wikipedia API.">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Your Blog Name">
-    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Your Blog Name">
+    <link rel="stylesheet" href="/eleventy-template-blog/css/index.css">
+    <link rel="stylesheet" href="/eleventy-template-blog/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/eleventy-template-blog/feed/feed.xml" type="application/atom+xml" title="Your Blog Name">
+    <link rel="alternate" href="/eleventy-template-blog/feed/feed.json" type="application/json" title="Your Blog Name">
   </head>
   <body>
     <header>
-      <h1 class="home"><a href="/">Your Blog Name</a></h1>
+      <h1 class="home"><a href="/eleventy-template-blog/">Your Blog Name</a></h1>
       <ul class="nav">
-        <li class="nav-item"><a href="/">Home</a></li>
-        <li class="nav-item"><a href="/posts/">Archive</a></li>
-        <li class="nav-item"><a href="/about/">About Me</a></li>
+        <li class="nav-item"><a href="/eleventy-template-blog/">Home</a></li>
+        <li class="nav-item"><a href="/eleventy-template-blog/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/eleventy-template-blog/about/">About Me</a></li>
       </ul>
     </header>
 
@@ -35,7 +35,7 @@
 
       <h1>Wikipedia&#39;s API, and Using &#39;wikipedia-query&#39; to Fetch Articles</h1>
 
-<time datetime="2022-02-24">24 Feb 2022</time><a href="/tags/wikipedia/" class="post-tag">wikipedia</a>
+<time datetime="2022-02-24">24 Feb 2022</time><a href="/eleventy-template-blog/tags/wikipedia/" class="post-tag">wikipedia</a>
 
 <p>Let's say you want to display information about a company, city, or your favorite food on your website. Of course you could just write it out yourself, but what if something changes or gets updated with better information? You can use Wikipedia's API to find an article from their website using regular search terms. In this blog, we will find out how to do this, but first we will talk about the <code>fetch()</code> JavaScript function. I will use my project <a href="https://github.com/erikgraybill/ip-project">here</a> as an example.</p>
 <p><code>fetch()</code> is an asynchronous function, meaning it can execute as other code is running at the same time; it will return whatever data is gathered whenever it can and the rest of the code continues on. It is used for HTTP requests and responses. You can learn more about the function <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">here</a>. In my example, the fetch function is used to return a JSON response with information about the user's location from <a href="https://freegeoip.app/json/">https://freegeoip.app/json/</a>. Once the function receives the information, it returns it and the code within <code>.then</code> executes.<br>
@@ -72,13 +72,13 @@
 <p>In summary, my example fetches a JSON response with the user's location information and stores it. The <code>wikipedia-query</code> tag invokes the MediaWiki API, takes the search term (in my case, city and state, city, and state in three separate queries), and sets the API 'titles' parameter to that term. The MediaWiki API then sends the query and retrieves the Wikipedia article for the given title (aka search term) in JSON format.</p>
 
 <hr>
-<ul><li>Previous: <a href="/posts/thirdpost/">This is my third post.</a></li>
+<ul><li>Previous: <a href="/eleventy-template-blog/posts/thirdpost/">This is my third post.</a></li>
 </ul>
 
     </main>
 
     <footer></footer>
 
-    <!-- Current page: /posts/fourthpost/ -->
+    <!-- Current page: /eleventy-template-blog/posts/fourthpost/ -->
   </body>
 </html>
