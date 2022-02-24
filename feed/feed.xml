@@ -5,7 +5,7 @@
 	
 	<link href="https://example.com/feed/feed.xml" rel="self"/>
 	<link href="https://example.com/"/>
-	<updated>2018-09-30T00:00:00Z</updated>
+	<updated>2022-02-24T00:00:00Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>Your Name Here</name>
@@ -13,12 +13,11 @@
 	</author>
 	
 	<entry>
-		<title>This is my fourth post.</title>
+		<title>Wikipedia&#39;s API, and Using &#39;wikipedia-query&#39; to Fetch Articles</title>
 		<link href="https://example.com/posts/fourthpost/"/>
-		<updated>2018-09-30T00:00:00Z</updated>
+		<updated>2022-02-24T00:00:00Z</updated>
 		<id>https://example.com/posts/fourthpost/</id>
-		<content type="html">&lt;h1 id=&quot;wikipedia&#39;s-api-and-using-&#39;wikipedia-query&#39;-to-fetch-articles&quot; tabindex=&quot;-1&quot;&gt;Wikipedia&#39;s API, and Using &#39;wikipedia-query&#39; to Fetch Articles &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/fourthpost/#wikipedia&#39;s-api-and-using-&#39;wikipedia-query&#39;-to-fetch-articles&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Let&#39;s say you want to display information about a company, city, or your favorite food on your website. Of course you could just write it out yourself, but what if something changes or gets updated with better information? You can use Wikipedia&#39;s API to find an article from their website using regular search terms. In this blog, we will find out how to do this, but first we will talk about the &lt;code&gt;fetch()&lt;/code&gt; JavaScript function. I will use my project &lt;a href=&quot;https://github.com/erikgraybill/ip-project&quot;&gt;here&lt;/a&gt; as an example.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Let&#39;s say you want to display information about a company, city, or your favorite food on your website. Of course you could just write it out yourself, but what if something changes or gets updated with better information? You can use Wikipedia&#39;s API to find an article from their website using regular search terms. In this blog, we will find out how to do this, but first we will talk about the &lt;code&gt;fetch()&lt;/code&gt; JavaScript function. I will use my project &lt;a href=&quot;https://github.com/erikgraybill/ip-project&quot;&gt;here&lt;/a&gt; as an example.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;fetch()&lt;/code&gt; is an asynchronous function, meaning it can execute as other code is running at the same time; it will return whatever data is gathered whenever it can and the rest of the code continues on. It is used for HTTP requests and responses. You can learn more about the function &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch&quot;&gt;here&lt;/a&gt;. In my example, the fetch function is used to return a JSON response with information about the user&#39;s location from &lt;a href=&quot;https://freegeoip.app/json/&quot;&gt;https://freegeoip.app/json/&lt;/a&gt;. Once the function receives the information, it returns it and the code within &lt;code&gt;.then&lt;/code&gt; executes.&lt;br /&gt;
 &lt;em&gt;Example JSON retrieved from fetch()&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{
