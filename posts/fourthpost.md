@@ -1,11 +1,10 @@
 ---
-title: This is my fourth post.
-description: This is a post on My Blog about touchpoints and circling wagons.
-date: 2018-09-30
-tags: second tag
+title: Wikipedia's API, and Using 'wikipedia-query' to Fetch Articles
+description: This is a post on getting started with the Wikipedia API.
+date: 2022-02-24
+tags: wikipedia
 layout: layouts/post.njk
 ---
-# Wikipedia's API, and Using 'wikipedia-query' to Fetch Articles
 
 Let's say you want to display information about a company, city, or your favorite food on your website. Of course you could just write it out yourself, but what if something changes or gets updated with better information? You can use Wikipedia's API to find an article from their website using regular search terms. In this blog, we will find out how to do this, but first we will talk about the `fetch()` JavaScript function. I will use my project [here](https://github.com/erikgraybill/ip-project) as an example.
 
